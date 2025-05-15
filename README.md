@@ -38,10 +38,9 @@ Edit .env with your mysql credentials.
 Build the Docker image:
 
 ```bash
-docker-compose exec app composer install #install composer
-
 # First build may take a few minutes
 docker-compose up -d --build 
+docker-compose exec app composer install #install composer
 docker-compose exec app php artisan key:generate
 
 # Run database migrations (after MySQL is ready)
