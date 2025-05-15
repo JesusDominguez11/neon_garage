@@ -9,7 +9,7 @@
 
 ## Quick Start
 - Clone the repository (if not already done)
-git clone https://github.com/your-username/neon_garage.git
+git clone https://github.com/JesusDominguez11/neon_garage.git
 cd neon_garage
 
 - Copy environment variables and set Laravel key
