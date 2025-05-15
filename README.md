@@ -8,11 +8,11 @@
 </p>
 
 ## Quick Start
-# 1. Clone the repository (if not already done)
+- Clone the repository (if not already done)
 git clone https://github.com/your-username/neon_garage.git
 cd neon_garage
 
-# 2. Copy environment variables and set Laravel key
+- Copy environment variables and set Laravel key
 cp .env.example .env
 
 ## Docker Development
