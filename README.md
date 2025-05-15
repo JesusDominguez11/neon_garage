@@ -9,11 +9,16 @@
 
 ## Quick Start
 - Clone the repository (if not already done)
+
+```bash
 git clone https://github.com/JesusDominguez11/neon_garage.git
 cd neon_garage
+```
 
 - Copy environment variables and set Laravel key
+```bash
 cp .env.example .env
+```
 
 ## Docker Development
 Run the project in a containerized environment with hot-reloading.
