@@ -429,56 +429,98 @@
 
 
     <div class="titles">
-      <h1 class="cross-bar-glitch" data-slice="20">NUESTRA HISTORIA</h1>
-      <h2 class="staggered-rise-in">Acerca de nuestro crecimiento ofreciendo nuestros servicios</h2>
-    </div>
-    <ul class="timeline">
-      <li class="timeline__line"></li>
-      <li class="timeline__item start">
-        <div class="info">
-          <div class="dot"></div>
-          <time class="time">2024</time>
-          <h4 class="title">Titulo de la fecha</h4>
-        </div>
-      </li>
-      <li class="timeline__item">
-        <div class="info">
-          <div class="dot"></div>
-          <time class="time">2016</time>
-          <h4 class="speaker"></h4>
-          <h4 class="title">Titulo de la fecha</h4>
-        </div>
-        <div class="content">
-          Descripcion sobre la fecha
-        </div>
-      </li>
-      <li class="timeline__item">
-        <div class="info">
-          <div class="dot"></div>
-          <time class="time">2012</time>
-          <h4 class="speaker"></h4>
-          <h4 class="title">Titulo de la fecha</h4>
-        </div>
-        <div class="content">
-          Descripcion sobre la fecha
-        </div>
-      </li>
-      <li class="timeline__item break">
-        <div class="info">
-          <div class="dot"></div>
-          <time class="time">2010</time>
-          <h4 class="title">Titulo de la fecha</h4>
-        </div>
-      </li>
+    <h1 class="cross-bar-glitch" data-slice="20">NUESTRA HISTORIA</h1>
+    <h2 class="staggered-rise-in">Trayectoria de excelencia automotriz</h2>
+</div>
 
-      <li class="timeline__item end">
+<ul class="timeline">
+    <li class="timeline__line"></li>
+    
+    <!-- Hito 2024 - Expansión -->
+    <li class="timeline__item start">
         <div class="info">
-          <div class="dot"></div>
-          <time class="time">2005</time>
-          <h4 class="title">Titulo de la fecha</h4>
+            <div class="dot"></div>
+            <time class="time">2024</time>
+            <h4 class="title">Nueva Sede</h4>
         </div>
-      </li>
-    </ul>
+        <div class="content">
+            <p>Inauguración de nuestras instalaciones premium con tecnología de punta:</p>
+            <ul>
+                <li>Taller de 1,200 m² con 6 elevadores</li>
+                <li>Sala de diagnóstico computarizado</li>
+                <li>Área especializada en vehículos eléctricos</li>
+            </ul>
+        </div>
+    </li>
+    
+    <!-- Hito 2020 - Certificación -->
+    <li class="timeline__item">
+        <div class="info">
+            <div class="dot"></div>
+            <time class="time">2020</time>
+            <h4 class="title">Certificación ASE</h4>
+        </div>
+        <div class="content">
+            <p>Nuestro equipo obtiene las certificaciones más prestigiosas:</p>
+            <ul>
+                <li>5 técnicos certificados Master Automobile Technician</li>
+                <li>Primer taller en la región con certificación EV</li>
+                <li>Alianza con fabricantes de herramientas Snap-on</li>
+            </ul>
+        </div>
+    </li>
+    
+    <!-- Hito 2016 - Innovación -->
+    <li class="timeline__item">
+        <div class="info">
+            <div class="dot"></div>
+            <time class="time">2016</time>
+            <h4 class="title">Revolución Tecnológica</h4>
+        </div>
+        <div class="content">
+            <p>Implementamos sistemas de diagnóstico avanzado:</p>
+            <ul>
+                <li>Scanner Autel MaxiSys Pro</li>
+                <li>Equipo de alineación Hunter 4D</li>
+                <li>Software de gestión de mantenimiento predictivo</li>
+            </ul>
+        </div>
+    </li>
+    
+    <!-- Hito 2012 - Crecimiento -->
+    <li class="timeline__item break">
+        <div class="info">
+            <div class="dot"></div>
+            <time class="time">2012</time>
+            <h4 class="title">Expansión de Servicios</h4>
+        </div>
+        <div class="content">
+            <p>Incorporamos nuevas especializaciones:</p>
+            <ul>
+                <li>Departamento de carrocería y pintura</li>
+                <li>Servicio 24/7 para flotas vehiculares</li>
+                <li>Programa de mantenimiento para taxis</li>
+            </ul>
+        </div>
+    </li>
+    
+    <!-- Hito 2005 - Fundación -->
+    <li class="timeline__item end">
+        <div class="info">
+            <div class="dot"></div>
+            <time class="time">2005</time>
+            <h4 class="title">Nuestros Inicios</h4>
+        </div>
+        <div class="content">
+            <p>Humble beginnings in a small garage:</p>
+            <ul>
+                <li>Fundado por Juan Pérez, mecánico con 20 años de experiencia</li>
+                <li>Primer cliente: reparación de transmisión Chevrolet</li>
+                <li>Filosofía inicial: "Reparar cada auto como si fuera nuestro"</li>
+            </ul>
+        </div>
+    </li>
+</ul>
 
 
 
