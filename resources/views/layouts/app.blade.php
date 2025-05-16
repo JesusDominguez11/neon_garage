@@ -1,20 +1,25 @@
 <!DOCTYPE html>
-<html lang="es">
+<html lang="es" class="scroll-smooth">
 <head>
-    @include('layouts.partials.head')
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>@yield('title') | tork </title>
+    <link rel="stylesheet" href="{{ asset('css/style.css') }}">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700&family=Playfair+Display:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
 </head>
-<body class="bg-space">
-    @include('layouts.partials.nav')
-
-    <main class="main-content">
+<body class="bg-gray-50 font-sans antialiased">
+    @include('layouts.header')
+    @include('layouts.nav')
+    
+    <main>
         @yield('content')
     </main>
-
-    @include('layouts.partials.footer')
-
-    <!-- Scripts -->
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
-    <!-- Font Awesome (para iconos) -->
-    <script src="https://kit.fontawesome.com/your-code.js" crossorigin="anonymous"></script>
+    
+    @include('layouts.footer')
+    
+    <script src="{{ asset('css/main.js') }}"></script>
 </body>
 </html>
