@@ -76,108 +76,280 @@
       <h2 class="staggered-rise-in">Todos los servicios que ofrecemos</h2>
     </div>
     <div class="speakers-cards">
-      <div class="card">
-        <div class="card-borders">
-          <div class="border-top"></div>
-          <div class="border-right"></div>
-          <div class="border-bottom"></div>
-          <div class="border-left"></div>
+
+        <!-- Servicio 1 - Mecánica Especializada -->
+<div class="card">
+    <div class="card-borders">
+        <div class="border-top"></div>
+        <div class="border-right"></div>
+        <div class="border-bottom"></div>
+        <div class="border-left"></div>
+    </div>
+    <div class="card-content">
+        <img src="img/services/engine.png" class="avatar" alt="Motor"/>
+        <div class="username">Mecánica especializada</div>
+        <div class="info">
+            <ul>
+                <li><strong>Reconstrucción completa</strong> de motores</li>
+                <li>Cambio de <strong>aceite sintético</strong> y filtros</li>
+                <li>Reparación de <strong>transmisiones</strong></li>
+                <li>Ajuste de <strong>bandas y cadenas</strong></li>
+            </ul>
+            <div class="service-meta">
+                <span class="duration">⏱ 2-6 horas</span>
+                <span class="warranty">🛡 6 meses garantía</span>
+            </div>
         </div>
-        <div class="card-content">
-          <img
-            src=""
-            class="avatar"
-          />
-          <div class="username">AAA</div>
-          <div class="info">Servicio de afinacion</div>
+    </div>
+</div>
+
+<!-- Servicio 5 - Carrocería y Pintura -->
+<div class="card">
+    <div class="card-borders">
+        <div class="border-top"></div>
+        <div class="border-right"></div>
+        <div class="border-bottom"></div>
+        <div class="border-left"></div>
+    </div>
+    <div class="card-content">
+        <img src="img/services/bodywork.png" class="avatar" alt="Carrocería"/>
+        <div class="username">Carrocería y pintura</div>
+        <div class="info">
+            <ul>
+                <li><strong>Enderezado</strong> de chasis</li>
+                <li>Pintura <strong>robotizada</strong> e igualación</li>
+                <li>Reparación de <strong>fibra de carbono</strong></li>
+                <li>Tratamiento <strong>anticorrosivo</strong></li>
+            </ul>
+            <div class="service-meta">
+                <span class="duration">⏱ 1-5 días</span>
+                <span class="warranty">🛡 1 año garantía</span>
+            </div>
         </div>
-      </div>
-      <div class="card">
-        <div class="card-borders">
-          <div class="border-top"></div>
-          <div class="border-right"></div>
-          <div class="border-bottom"></div>
-          <div class="border-left"></div>
+    </div>
+</div>
+
+<!-- Servicio 6 - Sistema Eléctrico -->
+<div class="card">
+    <div class="card-borders">
+        <div class="border-top"></div>
+        <div class="border-right"></div>
+        <div class="border-bottom"></div>
+        <div class="border-left"></div>
+    </div>
+    <div class="card-content">
+        <img src="img/services/electric.png" class="avatar" alt="Eléctrico"/>
+        <div class="username">Electricidad Automotriz</div>
+        <div class="info">
+            <ul>
+                <li>Diagnóstico <strong>computarizado</strong></li>
+                <li>Reparación de <strong>alternadores</strong></li>
+                <li>Upgrade <strong>sistema de iluminación</strong></li>
+                <li>Instalación <strong>accesorios</strong></li>
+            </ul>
+            <div class="service-meta">
+                <span class="duration">⏱ 1-3 horas</span>
+                <span class="warranty">🛡 4 meses garantía</span>
+            </div>
         </div>
-        <div class="card-content">
-          <img src="" class="avatar" />
-          <div class="username">AAA</div>
-          <div class="info">Servicio de alineamiento</div>
+    </div>
+</div>
+
+<!-- Servicio 3 - Sistema de Frenos -->
+<div class="card">
+    <div class="card-borders">
+        <div class="border-top"></div>
+        <div class="border-right"></div>
+        <div class="border-bottom"></div>
+        <div class="border-left"></div>
+    </div>
+    <div class="card-content">
+        <img src="img/services/brakes.png" class="avatar" alt="Frenos"/>
+        <div class="username">Frenos</div>
+        <div class="info">
+            <ul>
+                <li>Cambio de <strong>pastillas y discos</strong></li>
+                <li>Rectificado de <strong>discos</strong></li>
+                <li>Reparación <strong>sistema ABS</strong></li>
+                <li>Líquido de frenos <strong>premium</strong></li>
+            </ul>
+            <div class="service-meta">
+                <span class="duration">⏱ 1-2 horas</span>
+                <span class="warranty">🛡 8 meses garantía</span>
+            </div>
         </div>
-      </div>
-      <div class="card">
-        <div class="card-borders">
-          <div class="border-top"></div>
-          <div class="border-right"></div>
-          <div class="border-bottom"></div>
-          <div class="border-left"></div>
+    </div>
+</div>
+
+<!-- Servicio 7 - Aire Acondicionado -->
+<div class="card">
+    <div class="card-borders">
+        <div class="border-top"></div>
+        <div class="border-right"></div>
+        <div class="border-bottom"></div>
+        <div class="border-left"></div>
+    </div>
+    <div class="card-content">
+        <img src="img/services/ac.png" class="avatar" alt="Aire Acondicionado"/>
+        <div class="username">Climatización</div>
+        <div class="info">
+            <ul>
+                <li>Recarga de <strong>gas R134a</strong></li>
+                <li>Limpieza <strong>antibacterial</strong></li>
+                <li>Reparación de <strong>compresores</strong></li>
+                <li>Sistema <strong>dual zone</strong></li>
+            </ul>
+            <div class="service-meta">
+                <span class="duration">⏱ 1.5 horas</span>
+                <span class="warranty">🛡 6 meses garantía</span>
+            </div>
         </div>
-        <div class="card-content">
-          <img
-            src=""
-            class="avatar"
-          />
-          <div class="username">AAA</div>
-          <div class="info">Reparacion de motor</div>
+    </div>
+</div>
+
+<!-- Servicio 4 - Diagnóstico Computarizado -->
+<div class="card">
+    <div class="card-borders">
+        <div class="border-top"></div>
+        <div class="border-right"></div>
+        <div class="border-bottom"></div>
+        <div class="border-left"></div>
+    </div>
+    <div class="card-content">
+        <img src="img/services/diagnostic.png" class="avatar" alt="Diagnóstico"/>
+        <div class="username">Diagnóstico avanzado</div>
+        <div class="info">
+            <ul>
+                <li>Escaneo <strong>OBD2</strong> completo</li>
+                <li>Análisis <strong>gráfico</strong> de parámetros</li>
+                <li>Pruebas <strong>actuadores</strong></li>
+                <li>Reporte <strong>técnico detallado</strong></li>
+            </ul>
+            <div class="service-meta">
+                <span class="duration">⏱ 30-45 min</span>
+                <span class="warranty">🛡 Diagnóstico preciso</span>
+            </div>
         </div>
-      </div>
-      <div class="card">
-        <div class="card-borders">
-          <div class="border-top"></div>
-          <div class="border-right"></div>
-          <div class="border-bottom"></div>
-          <div class="border-left"></div>
+    </div>
+</div>
+
+        <!-- Servicio de Afinación (Completo) -->
+<div class="card">
+    <div class="card-borders">
+        <div class="border-top"></div>
+        <div class="border-right"></div>
+        <div class="border-bottom"></div>
+        <div class="border-left"></div>
+    </div>
+    <div class="card-content">
+        <img src="img/services/tune-up.png" class="avatar" alt="Afinación"/>
+        <div class="username">Afinación</div>
+        <div class="info">
+            <ul>
+                <li><strong>Cambio de bujías</strong> y cables</li>
+                <li>Ajuste de <strong>válvulas</strong> y sincronización</li>
+                <li>Limpieza de <strong>inyectores</strong></li>
+                <li>Revisión <strong>sistema de combustible</strong></li>
+                <li>Optimización <strong>rendimiento</strong></li>
+            </ul>
+            <div class="service-meta">
+                <span class="duration">⏱ 2-3 horas</span>
+                <span class="warranty">🛡 3 meses garantía</span>
+            </div>
         </div>
-        <div class="card-content">
-          <img src="" class="avatar" />
-          <div class="username">AAA</div>
-          <div class="info">Pintura</div>
+    </div>
+</div>
+
+<!-- Servicio de Alineamiento (Profesional) -->
+<div class="card">
+    <div class="card-borders">
+        <div class="border-top"></div>
+        <div class="border-right"></div>
+        <div class="border-bottom"></div>
+        <div class="border-left"></div>
+    </div>
+    <div class="card-content">
+        <img src="img/services/alignment.png" class="avatar" alt="Alineamiento"/>
+        <div class="username">Alineamiento 4D</div>
+        <div class="info">
+            <ul>
+                <li>Alineación <strong>computarizada</strong> de precisión</li>
+                <li>Ajuste <strong>ángulos de caída</strong>, caster y convergencia</li>
+                <li>Balanceo <strong>dinámico</strong> de ruedas</li>
+                <li>Diagnóstico <strong>suspensión</strong></li>
+                <li>Corrección <strong>desgaste irregular</strong> de llantas</li>
+            </ul>
+            <div class="service-meta">
+                <span class="duration">⏱ 1.5 horas</span>
+                <span class="warranty">🛡 6 meses garantía</span>
+            </div>
         </div>
-      </div>
-      <div class="card">
-        <div class="card-borders">
-          <div class="border-top"></div>
-          <div class="border-right"></div>
-          <div class="border-bottom"></div>
-          <div class="border-left"></div>
+    </div>
+</div>
+
+<!-- Reconstrucción de Motor (Completa) -->
+<div class="card">
+    <div class="card-borders">
+        <div class="border-top"></div>
+        <div class="border-right"></div>
+        <div class="border-bottom"></div>
+        <div class="border-left"></div>
+    </div>
+    <div class="card-content">
+        <img src="img/services/engine-rebuild.png" class="avatar" alt="Reconstrucción motor"/>
+        <div class="username">Reconstrucción de motor</div>
+        <div class="info">
+            <ul>
+                <li><strong>Desarme completo</strong> e inspección</li>
+                <li>Rectificación de <strong>bloque y culata</strong></li>
+                <li>Cambio de <strong>anillos, cojinetes, sellos</strong></li>
+                <li>Pruebas de <strong>compresión</strong> post-reparación</li>
+                <li>Puesta a punto <strong>certificada</strong></li>
+            </ul>
+            <div class="service-meta">
+                <span class="duration">⏱ 3-5 días</span>
+                <span class="warranty">🛡 12 meses garantía</span>
+            </div>
         </div>
-        <div class="card-content">
-          <img src="" class="avatar" />
-          <div class="username">AAA</div>
-          <div class="info">Iluminacion</div>
+    </div>
+</div>
+
+<!-- Reparaciones Generales (Especializadas) -->
+<div class="card">
+    <div class="card-borders">
+        <div class="border-top"></div>
+        <div class="border-right"></div>
+        <div class="border-bottom"></div>
+        <div class="border-left"></div>
+    </div>
+    <div class="card-content">
+        <img src="img/services/repairs.png" class="avatar" alt="Reparaciones"/>
+        <div class="username">Reparaciones expertas</div>
+        <div class="info">
+            <ul>
+                <li><strong>Diagnóstico preciso</strong> con scanner</li>
+                <li>Reparación <strong>sistema eléctrico</strong></li>
+                <li>Solución <strong>problemas mecánicos</strong> complejos</li>
+                <li>Reparación <strong>transmisiones</strong> automáticas/manuales</li>
+                <li><strong>Solución inmediata</strong> para averías</li>
+            </ul>
+            <div class="service-meta">
+                <span class="duration">⏱ Varía según problema</span>
+                <span class="warranty">🛡 6 meses garantía</span>
+            </div>
         </div>
-      </div>
-      <div class="card">
-        <div class="card-borders">
-          <div class="border-top"></div>
-          <div class="border-right"></div>
-          <div class="border-bottom"></div>
-          <div class="border-left"></div>
-        </div>
-        <div class="card-content">
-          <img
-            src=""
-            class="avatar"
-          />
-          <div class="username">AAA</div>
-          <div class="info">Carroceria</div>
-        </div>
-      </div>
-      <div class="card">
-        <div class="card-borders">
-          <div class="border-top"></div>
-          <div class="border-right"></div>
-          <div class="border-bottom"></div>
-          <div class="border-left"></div>
-        </div>
-        <div class="card-content">
-          <img src="" class="avatar" />
-          <div class="username">AAA</div>
-          <div class="info">
-            Reparaciones
-          </div>
-        </div>
-      </div>
+    </div>
+</div>
+
+
+
+
+
+
+
+
+
+
     </div>
   </section>
 
@@ -307,6 +479,11 @@
         </div>
       </li>
     </ul>
+
+
+
+
+
   </section>
 
 
