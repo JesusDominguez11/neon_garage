@@ -793,13 +793,17 @@ document.addEventListener('DOMContentLoaded', () => {
 
 
 
-  <section class="normal-section" id="blank" >
+  <section class="video-section" id="blank" >
   <video autoplay muted loop playsinline class="bg-video">
     <source src="/videos/adpp_2.mp4" type="video/mp4" />
     Tu navegador no soporta videos HTML5.
   </video>
+
+  <div class="video-content">
+    <h1>Hasta luego</h1>
+    <p>Esperamos verte pronto por aqui, tu taller de confianza</p>
+  </div>
 </section>
-  
 
 
 

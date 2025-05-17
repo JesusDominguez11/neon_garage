@@ -2094,14 +2094,7 @@ main #sponsors .sponsors-list li a svg {
 
 
 
-.about-section {
-  position: relative;
-  width: 100%;
-  /* height: 100vh; */
-  background: #0000005e;
-  overflow: hidden;
 
-}
 
 main .normal-section.about-section {
   /* background: none !important; */
@@ -2111,6 +2104,46 @@ main .normal-section.about-section {
     background-size: cover;
 }
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.video-section {
+  position: relative;
+  width: 100%;
+  height: 100vh;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.video-content {
+  position: relative;
+  z-index: 1;
+  color: white;
+  padding: 2rem;
+    margin: 0 auto;
+    width: 60vw;
+}
+main .video-section h1 {
+  margin-bottom: 8px;
+  font-size: 86px;
+  text-transform: uppercase;
+}
 .bg-video {
   position: absolute;
   top: 0;
@@ -2122,16 +2155,27 @@ main .normal-section.about-section {
   opacity: 0.8; /* puedes ajustarlo si quieres oscurecer un poco */
 }
 
-.about-content {
-  position: relative;
-  z-index: 1;
-  color: white;
-  padding: 2rem;
-  text-align: center;
+
+
+
+
+/* main .video-section {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-image: linear-gradient(rgba(16, 16, 16, 0.8), rgba(16, 16, 16, 0.8)), url("/img/hero_banner.jpeg");
+  background-position: center;
+  background-size: cover;
 }
 
-
-
+.video-content {
+    position: relative;
+    max-width: 1200px;
+    margin: 0 auto;
+    width: 60vw;
+} */
 
 
 

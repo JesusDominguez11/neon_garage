@@ -125,16 +125,19 @@
 
 
 <style>
+@import url("https://fonts.googleapis.com/css?family=Montserrat:400,400i,700");
+
   .refined-footer {
-  background: linear-gradient(135deg, #1c1e26 0%, #2a2e3c 100%);
+  background: linear-gradient(135deg, #898ba385 0%, #000000 100%);
   color: #cfd8e6;
-  font-family: 'Segoe UI', sans-serif;
+  /* font-family: 'Segoe UI', sans-serif; */
+  font-family: Montserrat, sans-serif;
   box-shadow:
     inset 0 2px 10px rgba(255, 255, 255, 0.05),
     0 12px 30px rgba(0, 0, 0, 0.8);
   position: relative;
   overflow: hidden;
-  border-top: 4px solid #4a90e2; /* azul brillante */
+  border-top: 4px solid #7e9acd;
 }
 
 .footer-top {
@@ -149,16 +152,16 @@
 }
 
 .footer-top::before {
-  content: '';
-  position: absolute;
-  top: -150px;
-  right: -150px;
-  width: 400px;
-  height: 400px;
-  background: radial-gradient(circle at top right, #4a90e2aa, transparent 70%);
-  filter: blur(80px);
-  z-index: 0;
-  animation: pulseGlow 6s ease-in-out infinite;
+content: '';
+    position: absolute;
+    top: -50px;
+    /* right: -150px; */
+    width: 400px;
+    height: 400px;
+    background: radial-gradient(circle at top right, #cfd8e6, #000000 70%);
+    filter: blur(60px);
+    z-index: 0;
+    animation: pulseGlow 6s ease-in-out infinite;
 }
 
 @keyframes pulseGlow {
@@ -176,7 +179,7 @@
   font-size: 2.5rem;
   margin-bottom: 1rem;
   font-weight: 900;
-  color: #4a90e2;
+  color: #cfd8e6;
   position: relative;
   cursor: default;
   overflow: hidden;
@@ -220,7 +223,7 @@
 .col h4 {
   font-size: 1.2rem;
   margin-bottom: 1rem;
-  color: #4a90e2;
+  color: #cfd8e6;
   position: relative;
   letter-spacing: 0.03em;
 }
@@ -230,7 +233,7 @@
   display: block;
   width: 40px;
   height: 3px;
-  background: #4a90e2;
+  background: #7e9acd;
   margin-top: 6px;
   border-radius: 2px;
 }
@@ -263,7 +266,7 @@
   bottom: -4px;
   width: 0%;
   height: 3px;
-  background: #4a90e2;
+  background: #7e9acd;
   transition: width 0.3s ease;
   border-radius: 2px;
 }
@@ -273,31 +276,25 @@
 }
 
 .col ul li:hover {
-  color: #4a90e2;
+  color: #cfd8e6;
   transform: translateX(6px);
   text-shadow: 0 0 8px #4a90e288;
 }
 
 .contact i {
   margin-right: 10px;
-  color: #4a90e2cc;
+  color: #cfd8e6;
   transition: color 0.3s ease;
 }
 
 .contact li:hover i {
-  color: #4a90e2;
-  text-shadow: 0 0 6px #4a90e2bb;
-}
-
-.newsletter {
-  grid-column: span 2;
-  margin-top: 2.5rem;
+  color: #7e9acd;
 }
 
 .newsletter h4 {
   font-size: 1.2rem;
   margin-bottom: 0.8rem;
-  color: #4a90e2;
+  color: #cfd8e6;
   letter-spacing: 0.02em;
 }
 
@@ -307,17 +304,9 @@
   flex-wrap: wrap;
   background: #2a2e3c;
   border-radius: 8px;
-  box-shadow:
-    inset 0 0 8px #4a90e2aa,
-    0 4px 15px #4a90e255;
+  box-shadow: inset 0 0 8px #898ba3b8, 0 4px 15px #4a90e203;
   padding: 0.7rem 1rem;
   transition: box-shadow 0.3s ease;
-}
-
-.newsletter form:hover {
-  box-shadow:
-    inset 0 0 15px #4a90e2dd,
-    0 8px 25px #4a90e277;
 }
 
 .newsletter input {
@@ -334,8 +323,8 @@
 }
 
 .newsletter input:focus {
-  background: #262b3c;
-  box-shadow: 0 0 8px #4a90e2cc;
+  background: #242731;
+  /* box-shadow: 0 0 8px #cfd8e650; */
 }
 
 .newsletter button {
@@ -393,7 +382,7 @@
 }
 
 .socials a:hover {
-  color: #4a90e2;
+  color: #7e9acd;
   transform: scale(1.4) rotate(10deg);
   filter: drop-shadow(0 0 8px #4a90e2cc);
   animation: bounce 0.6s;
