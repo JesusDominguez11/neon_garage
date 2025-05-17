@@ -1,7 +1,7 @@
 <footer class="refined-footer">
   <div class="footer-top">
     <div class="about">
-      <h2 class="logo">Neon Garage</h2>
+      <h2 class="logo">tork</h2>
       <p>Transformamos vehículos con elegancia, tecnología y precisión. Mantenimiento, restauración y diseño automotriz de alto nivel.</p>
     </div>
 
@@ -125,13 +125,16 @@
 
 
 <style>
-.refined-footer {
-  background: #f5f5f5;
-  color: #222;
+  .refined-footer {
+  background: linear-gradient(135deg, #1c1e26 0%, #2a2e3c 100%);
+  color: #cfd8e6;
   font-family: 'Segoe UI', sans-serif;
-  box-shadow: inset 0 2px 8px rgba(0,0,0,0.05);
+  box-shadow:
+    inset 0 2px 10px rgba(255, 255, 255, 0.05),
+    0 12px 30px rgba(0, 0, 0, 0.8);
   position: relative;
   overflow: hidden;
+  border-top: 4px solid #4a90e2; /* azul brillante */
 }
 
 .footer-top {
@@ -142,34 +145,70 @@
   grid-template-columns: 1fr 2fr;
   gap: 3rem;
   position: relative;
+  z-index: 10;
 }
 
 .footer-top::before {
   content: '';
   position: absolute;
-  top: -100px;
-  right: -100px;
-  width: 300px;
-  height: 300px;
-  background: radial-gradient(circle at top right, rgba(0,0,0,0.05), transparent);
+  top: -150px;
+  right: -150px;
+  width: 400px;
+  height: 400px;
+  background: radial-gradient(circle at top right, #4a90e2aa, transparent 70%);
+  filter: blur(80px);
   z-index: 0;
+  animation: pulseGlow 6s ease-in-out infinite;
 }
 
-.footer-top > * {
-  z-index: 1;
+@keyframes pulseGlow {
+  0%, 100% {
+    transform: scale(1);
+    opacity: 0.3;
+  }
+  50% {
+    transform: scale(1.1);
+    opacity: 0.6;
+  }
 }
 
 .about h2.logo {
-  font-size: 2rem;
+  font-size: 2.5rem;
   margin-bottom: 1rem;
-  font-weight: bold;
-  color: #111;
+  font-weight: 900;
+  color: #4a90e2;
   position: relative;
+  cursor: default;
+  overflow: hidden;
+}
+
+.about h2.logo::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: -75%;
+  width: 50%;
+  height: 100%;
+  background: linear-gradient(120deg, transparent, rgba(255,255,255,0.4), transparent);
+  transform: skewX(-20deg);
+  animation: shine 3s infinite;
+  pointer-events: none;
+}
+
+@keyframes shine {
+  0% {
+    left: -75%;
+  }
+  100% {
+    left: 125%;
+  }
 }
 
 .about p {
-  font-size: 0.95rem;
-  line-height: 1.6;
+  font-size: 1rem;
+  line-height: 1.7;
+  color: #abb7c7;
+  max-width: 400px;
 }
 
 .columns {
@@ -179,9 +218,21 @@
 }
 
 .col h4 {
-  font-size: 1.1rem;
-  margin-bottom: 0.8rem;
+  font-size: 1.2rem;
+  margin-bottom: 1rem;
+  color: #4a90e2;
   position: relative;
+  letter-spacing: 0.03em;
+}
+
+.col h4::after {
+  content: '';
+  display: block;
+  width: 40px;
+  height: 3px;
+  background: #4a90e2;
+  margin-top: 6px;
+  border-radius: 2px;
 }
 
 .col ul {
@@ -190,27 +241,31 @@
 }
 
 .col ul li {
-  margin-bottom: 0.6rem;
-  font-size: 0.95rem;
-  color: #555;
-  transition: transform 0.3s ease;
+  margin-bottom: 0.8rem;
+  font-size: 1rem;
+  color: #95a1b7;
+  cursor: pointer;
+  position: relative;
+  transition: transform 0.3s ease, color 0.3s ease;
 }
 
 .col ul li a {
   text-decoration: none;
-  color: #555;
+  color: inherit;
   position: relative;
+  display: inline-block;
 }
 
 .col ul li a::after {
   content: "";
   position: absolute;
   left: 0;
-  bottom: -2px;
+  bottom: -4px;
   width: 0%;
-  height: 2px;
-  background: #333;
-  transition: width 0.3s;
+  height: 3px;
+  background: #4a90e2;
+  transition: width 0.3s ease;
+  border-radius: 2px;
 }
 
 .col ul li a:hover::after {
@@ -218,80 +273,139 @@
 }
 
 .col ul li:hover {
-  transform: translateX(4px);
+  color: #4a90e2;
+  transform: translateX(6px);
+  text-shadow: 0 0 8px #4a90e288;
 }
 
 .contact i {
-  margin-right: 8px;
-  color: #777;
+  margin-right: 10px;
+  color: #4a90e2cc;
+  transition: color 0.3s ease;
+}
+
+.contact li:hover i {
+  color: #4a90e2;
+  text-shadow: 0 0 6px #4a90e2bb;
 }
 
 .newsletter {
   grid-column: span 2;
-  margin-top: 2rem;
+  margin-top: 2.5rem;
 }
 
 .newsletter h4 {
-  font-size: 1rem;
-  margin-bottom: 0.6rem;
+  font-size: 1.2rem;
+  margin-bottom: 0.8rem;
+  color: #4a90e2;
+  letter-spacing: 0.02em;
 }
 
 .newsletter form {
   display: flex;
-  gap: 0.5rem;
+  gap: 0.7rem;
   flex-wrap: wrap;
-  background: #fff;
-  border: 1px solid #ccc;
-  padding: 0.5rem;
-  border-radius: 6px;
-  box-shadow: inset 0 1px 3px rgba(0,0,0,0.05);
+  background: #2a2e3c;
+  border-radius: 8px;
+  box-shadow:
+    inset 0 0 8px #4a90e2aa,
+    0 4px 15px #4a90e255;
+  padding: 0.7rem 1rem;
+  transition: box-shadow 0.3s ease;
+}
+
+.newsletter form:hover {
+  box-shadow:
+    inset 0 0 15px #4a90e2dd,
+    0 8px 25px #4a90e277;
 }
 
 .newsletter input {
   flex: 1;
-  padding: 0.5rem;
+  padding: 0.7rem 1rem;
   border: none;
   outline: none;
+  border-radius: 6px;
+  font-size: 1rem;
+  background: #1c1e26;
+  color: #cfd8e6;
+  transition: background 0.3s ease, box-shadow 0.3s ease;
+  box-shadow: inset 0 2px 5px #000a;
+}
+
+.newsletter input:focus {
+  background: #262b3c;
+  box-shadow: 0 0 8px #4a90e2cc;
 }
 
 .newsletter button {
-  background: #222;
-  color: #fff;
+  background: #4a90e2;
+  color: #e1e9f7;
   border: none;
-  padding: 0 1rem;
+  padding: 0 1.3rem;
   cursor: pointer;
-  border-radius: 4px;
-  transition: background 0.3s;
+  border-radius: 6px;
+  font-weight: 700;
+  font-size: 1.1rem;
+  transition: background 0.4s ease, transform 0.2s ease;
+  box-shadow: 0 3px 10px #4a90e255;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.newsletter button i {
+  transition: transform 0.3s ease;
 }
 
 .newsletter button:hover {
-  background: #000;
+  background: #67a1f3;
+  transform: scale(1.1);
+  box-shadow: 0 6px 15px #67a1f399;
+}
+
+.newsletter button:hover i {
+  transform: translateX(4px);
 }
 
 .footer-bottom {
-  border-top: 1px solid #ddd;
-  padding: 1rem 2rem;
+  border-top: 1px solid #3a3f56;
+  padding: 1.2rem 2rem;
   display: flex;
   justify-content: space-between;
   align-items: center;
   max-width: 1300px;
   margin: auto;
   font-size: 0.9rem;
-  color: #777;
+  color: #8f9bb3;
   flex-wrap: wrap;
   gap: 1rem;
+  position: relative;
+  z-index: 10;
 }
 
 .socials a {
-  margin-left: 1rem;
-  color: #555;
-  font-size: 1.2rem;
+  margin-left: 1.2rem;
+  color: #a3afce;
+  font-size: 1.4rem;
   transition: transform 0.3s ease, color 0.3s ease;
+  filter: drop-shadow(0 0 2px #4a90e288);
 }
 
 .socials a:hover {
-  color: #000;
-  transform: scale(1.2);
+  color: #4a90e2;
+  transform: scale(1.4) rotate(10deg);
+  filter: drop-shadow(0 0 8px #4a90e2cc);
+  animation: bounce 0.6s;
+}
+
+@keyframes bounce {
+  0%, 100% {
+    transform: scale(1.4) rotate(10deg);
+  }
+  50% {
+    transform: scale(1.6) rotate(-10deg);
+  }
 }
 
 @media (max-width: 768px) {
@@ -307,51 +421,11 @@
     flex-direction: column;
     align-items: flex-start;
   }
+
+  .socials a {
+    margin-left: 0;
+    margin-right: 1rem;
+  }
 }
 
 </style>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-¿
