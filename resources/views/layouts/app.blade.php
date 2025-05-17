@@ -16,9 +16,8 @@
     
     <main>
         @yield('content')
+        @include('layouts.footer')
     </main>
-    
-    @include('layouts.footer')
     
     <script src="{{ asset('css/main.js') }}"></script>
 </body>

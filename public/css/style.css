@@ -1006,15 +1006,15 @@ main #sponsors .sponsors-list li a svg {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
     gap: 2rem;
-    margin: 3rem 0;
+    margin: 3rem 2rem;
 }
 
 .feature-card {
-    background: rgba(0,0,0,0.05);
+    background: rgb(26 26 26 / 70%);
     padding: 2rem;
     transition: transform 0.3s ease;
     border-radius: 10px;
-    box-shadow: 0 4px 10px rgba(207, 207, 207, 0.493);
+    box-shadow: 1px 1px 2px 2px rgb(207 207 207 / 25%);
 }
 
 .feature-card:hover {
@@ -1207,7 +1207,7 @@ main #sponsors .sponsors-list li a svg {
 
 
 .card {
-  --card-bg-color: linear-gradient(-20deg, #2b5876 0%, #4e4376 100%);
+  --card-bg-color: linear-gradient(-35deg, #000000 0%, #b7b9c6 100%);
   position: relative;
   width: 240px;
   color: white;
@@ -2094,38 +2094,59 @@ main #sponsors .sponsors-list li a svg {
 
 
 
-
-
-.hero-section2 {
+.about-section {
   position: relative;
-  height: 100vh;
-  background-color: #111;
+  width: 100%;
+  /* height: 100vh; */
+  background: #0000005e;
   overflow: hidden;
+
 }
 
-.hero-section2::before {
-  content: "";
+main .normal-section.about-section {
+  /* background: none !important; */
+  color: inherit !important;
+    background-image: linear-gradient(rgba(16, 16, 16, 0.8), rgba(16, 16, 16, 0.8)), url(/videos/about.jpeg) !important;
+    background-position: center;
+    background-size: cover;
+}
+
+.bg-video {
   position: absolute;
-  top: 0; left: 0;
-  width: 100%; height: 100%;
-  background-image: url('/img/brakes.jpeg');
-  background-size: cover;
-  background-position: center;
-  opacity: 0;
-  transition: opacity 0.5s ease-in-out;
-  z-index: 0;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover; /* hace que el video cubra todo sin deformarse */
+  z-index: -1;
+  opacity: 0.8; /* puedes ajustarlo si quieres oscurecer un poco */
 }
 
-.hero-section2.bg-hover::before {
-  opacity: 1;
-}
-
-.hover-trigger {
+.about-content {
   position: relative;
-  z-index: 1; 
+  z-index: 1;
   color: white;
-  padding: 1rem;
+  padding: 2rem;
+  text-align: center;
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
@@ -2157,4 +2178,48 @@ main #sponsors .sponsors-list li a svg {
 .card-content.hovered::before {
   opacity: 1;
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 

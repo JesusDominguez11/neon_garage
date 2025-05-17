@@ -6,7 +6,7 @@
 
 
 
-<main>
+
 
 
 
@@ -55,21 +55,18 @@
 
 </section>
 
-{{-- <section id="hero" class="hero-section2">
-  <div id="hoverTrigger" class="hover-trigger">Pasa el cursor aquí</div>
-</section>
-<script>
-  const trigger = document.getElementById('hoverTrigger');
-  const hero = document.getElementById('hero');
+{{-- <section class="about-section">
+  <video autoplay muted loop playsinline class="bg-video">
+    <source src="/videos/adpp_2.mp4" type="video/mp4" />
+    Tu navegador no soporta videos HTML5.
+  </video>
 
-  trigger.addEventListener('mouseenter', () => {
-    hero.classList.add('bg-hover');
-  });
+  <div class="about-content">
+    <h1>Bienvenido a Neon Garage</h1>
+    <p>Tu taller con estilo retro y moderno</p>
+  </div>
+</section> --}}
 
-  trigger.addEventListener('mouseleave', () => {
-    hero.classList.remove('bg-hover');
-  });
-</script> --}}
 
 
 
@@ -424,9 +421,7 @@ document.addEventListener('DOMContentLoaded', () => {
 
 
 
-  <section class="normal-section" id="schedules">
-
-    
+  <section class="about-section normal-section" id="schedules">   
 
 <div class="titles">
         <h1 class="cross-bar-glitch" data-slice="20">SOBRE NOSOTROS</h1>
@@ -448,20 +443,17 @@ document.addEventListener('DOMContentLoaded', () => {
         
         <div class="about-features">
             <div class="feature-card">
-                <div class="feature-icon">✓</div>
-                <h3 class="fade-up">Misión</h3>
+                <div class="feature-icon">✓ Mision</div>
                 <p class="fade-up">Proporcionar reparaciones precisas con transparencia absoluta y garantías reales.</p>
             </div>
             
             <div class="feature-card">
-                <div class="feature-icon">✚</div>
-                <h3 class="fade-up">Visión</h3>
+                <div class="feature-icon">✚ Visión</div>
                 <p class="fade-up">Convertirnos en el taller de referencia para vehículos de alta gama en la región.</p>
             </div>
             
             <div class="feature-card">
-                <div class="feature-icon">♥</div>
-                <h3 class="fade-up">Valores</h3>
+                <div class="feature-icon">♥ Valores</div>
                 <p class="fade-up">Honestidad técnica • Excelencia certificada • Atención personalizada</p>
             </div>
         </div>
@@ -778,77 +770,70 @@ document.addEventListener('DOMContentLoaded', () => {
         </a>
         <div>SACHS</div>
       </li>
-
-
-{{-- 
-      <li class="fade-up">
-        <a href="http://www.ucloud.cn" target="_blank">
-          <img src="https://img.w3ctech.com/ucloud-400.png" alt="Ucloud" />
-        </a>
-        <div>marca</div>
-      </li>
-      <li class="fade-up">
-        <a href="http://www.broadview.com.cn/" target="_blank">
-          <img src="https://img.w3ctech.com/bowen.png" alt="博文视点" />
-        </a>
-        <div>marca</div>
-      </li>
-      <li class="fade-up">
-        <a href="http://www.ituring.com.cn/" target="_blank">
-          <img src="https://img.w3ctech.com/turing-logo.png" alt="图灵教育" />
-        </a>
-        <div>marca</div>
-      </li>
-      <li class="fade-up">
-        <a href="http://www.epubit.com.cn/" target="_blank">
-          <img src="https://img.w3ctech.com/yibuclub.png" alt="异步社区" />
-        </a>
-        <div>marca</div>
-      </li>
-      <li class="fade-up">
-        <a href="http://www.w3cplus.com/" target="_blank">
-          <img src="https://img.w3ctech.com/w3c-plus-400.png" alt="w3cplus" />
-        </a>
-        <div>marca</div>
-      </li>
-      <li class="fade-up">
-        <a href=" https://zdk.f2er.net/" target="_blank">
-          <img src="https://img.w3ctech.com/zdk_400.png" alt="前端de早读课" />
-        </a>
-        <div>marca</div>
-      </li>
-      <li class="fade-up">
-        <a href="http://gold.xitu.io/" target="_blank">
-          <img src="https://img.w3ctech.com/juejin-logo.png" alt="稀土掘金" />
-        </a>
-        <div>marca</div>
-      </li>
-      <li class="fade-up">
-        <a href="http://qianduan.guru/" target="_blank"
-          ><img
-            src="https://img.w3ctech.com/frontendmagezine.png"
-            alt="前端外刊评论"
-        /></a>
-        <div>marca</div>
-      </li>
-      <li class="fade-up">
-        <a href="https://www.oschina.net/" target="_blank"
-          ><img src="https://img.w3ctech.com/oschina.png" alt="开源中国"
-        /></a>
-        <div>marca</div>
-      </li>
-      <li class="fade-up">
-        <a href="https://www.uisdc.com/" target="_blank"
-          ><img src="https://img.w3ctech.com/uisdc.png" alt="优设"
-        /></a>
-        <div>marca</div>
-      </li> --}}
     </ul>
   </section>
 
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  <section class="normal-section" id="blank" >
+  <video autoplay muted loop playsinline class="bg-video">
+    <source src="/videos/adpp_2.mp4" type="video/mp4" />
+    Tu navegador no soporta videos HTML5.
+  </video>
+</section>
   
-</main>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
