@@ -1,16 +1,22 @@
-# Stage 1: Build the app
 FROM php:8.2-fpm as builder
 
-# Install dependencies
+# Install system dependencies
 RUN apt-get update && apt-get install -y \
     git \
     curl \
     libpng-dev \
     libonig-dev \
     libxml2-dev \
+    libzip-dev \
     zip \
     unzip \
-    && docker-php-ext-install pdo_mysql mbstring exif pcntl bcmath gd
+    nginx \
+    libfreetype6-dev \
+    libjpeg62-turbo-dev \
+    libpng-dev \
+    && docker-php-ext-configure gd --with-freetype --with-jpeg \
+    && docker-php-ext-install -j$(nproc) gd \
+    && docker-php-ext-install pdo_mysql mbstring exif pcntl bcmath zip
 
 # Install Composer
 COPY --from=composer:latest /usr/bin/composer /usr/bin/composer
@@ -22,26 +28,27 @@ RUN composer install --no-interaction --no-scripts --no-dev
 RUN chown -R www-data:www-data /var/www/html/storage
 RUN chmod -R 775 /var/www/html/storage
 
-# Stage 2: Production image
+# Production stage
 FROM php:8.2-fpm
 
-# Install dependencies
+# Install production dependencies
 RUN apt-get update && apt-get install -y \
     nginx \
-    && docker-php-ext-install pdo_mysql mbstring
+    libonig-dev \
+    libzip-dev \
+    && docker-php-ext-install pdo_mysql mbstring zip \
+    && apt-get clean \
+    && rm -rf /var/lib/apt/lists/*
 
-# Copy built artifacts from builder
 COPY --from=builder /var/www/html /var/www/html
 COPY docker/nginx/default.conf /etc/nginx/conf.d/default.conf
 
-# Configure Nginx and PHP
+# Permissions
 RUN chown -R www-data:www-data /var/www/html/storage
 RUN chmod -R 775 /var/www/html/storage
 
-# Expose port 10000 for Render
 EXPOSE 10000
 
-# Start script
 COPY docker/start.sh /usr/local/bin/start
 RUN chmod +x /usr/local/bin/start
 CMD ["/usr/local/bin/start"]
