@@ -560,7 +560,7 @@ main .hero-section {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  background-image: linear-gradient(rgba(16, 16, 16, 0.8), rgba(16, 16, 16, 0.8)), url(https://images.unsplash.com/photo-1435575653489-b0873ec954e2?ixlib=rb-1.2.1&q=85&fm=jpg&crop=entropy&cs=srgb&ixid=eyJhcHBfaWQiOjE0NTg5fQ);
+  background-image: linear-gradient(rgba(16, 16, 16, 0.8), rgba(16, 16, 16, 0.8)), url("/img/hero_banner.jpeg");
   background-position: center;
   background-size: cover;
 }
@@ -595,7 +595,7 @@ main .normal-section .titles {
   display: grid;
   justify-items: center;
   gap: 20px;
-  letter-spacing: 0.25em;
+  /* letter-spacing: 0.25em; */
 }
 main .normal-section:nth-child(odd) {
   background: #eceffc;
@@ -651,8 +651,9 @@ main #location .place .marker {
   margin: 0 1em 0.5em 0;
 }
 main #location .place .place-name {
-  font-size: 20px;
+  /* font-size: 20px; */
   font-weight: bold;
+  color: white;
 }
 main #location #map {
   width: 60vw;
@@ -681,6 +682,12 @@ main #sponsors .sponsors-list li a img {
   max-width: 150px;
   pointer-events: none;
 }
+
+main #sponsors .sponsors-list li a svg {
+  max-width: 150px;
+  pointer-events: none;
+}
+
 @media screen and (max-width: 750px) {
   main #sponsors .sponsors-list {
     margin: 0;
@@ -1761,5 +1768,393 @@ main #sponsors .sponsors-list li a img {
 .fade-in.active {
   -webkit-animation: reveal 0.6s forwards;
           animation: reveal 0.6s forwards;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.contact-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 2rem;
+}
+
+/* Tarjetas de Información */
+.contact-info {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 2rem;
+    margin-bottom: 3rem;
+}
+
+.contact-card {
+    background: rgba(255,255,255,0.08);
+    border-radius: 10px;
+    padding: 2rem;
+    backdrop-filter: blur(5px);
+    border: 1px solid rgba(255,255,255,0.1);
+    box-shadow: 0 10px 20px rgba(0,0,0,0.2);
+    /* transition: transform 0.3s ease, box-shadow 0.3s ease; */
+}
+
+.contact-card:hover {
+    /* transform: translateY(-5px); */
+    box-shadow: 0 10px 20px rgba(0,0,0,0.2);
+}
+
+.contact-icon {
+    font-size: 2rem;
+    margin-bottom: 2rem;
+}
+
+.contact-card h3 {
+    font-size: 1.4rem;
+    margin-bottom: 1rem;
+    color: var(--color-primary);
+}
+
+.contact-card p {
+    line-height: 1.6;
+    margin-bottom: 1.5rem;
+}
+
+.map-link, .contact-card a {
+    color: var(--color-accent);
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+.map-link:hover, .contact-card a:hover {
+    color: rgb(33, 92, 255);
+    text-decoration: underline;
+}
+
+/* Mapa Interactivo */
+.map-section {
+    position: relative;
+    margin: 3rem 0;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.2);
+}
+
+.interactive-map {
+    height: 400px;
+    width: 100%;
+    background: #222;
+}
+
+.place {
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    z-index: 100;
+    background: rgba(0,0,0,0.7);
+    padding: 0.3rem 0.6rem;
+    border-radius: 30px;
+    display: flex;
+    align-items: center;
+    backdrop-filter: blur(1px);
+}
+
+.place-name {
+    font-weight: 600;
+    margin-left: 0.5rem;
+}
+
+/* Marcador Mejorado */
+.marker {
+    position: relative;
+    width: 40px;
+    height: 40px;
+}
+
+.pin {
+    width: 20px;
+    height: 20px;
+    background: var(--color-accent);
+    border-radius: 50% 50% 50% 0;
+    position: absolute;
+    transform: rotate(-45deg);
+    left: 10px;
+    top: 5px;
+    z-index: 2;
+    box-shadow: 0 0 5px rgba(0,0,0,0.3);
+}
+
+.pin:after {
+    content: '';
+    width: 10px;
+    height: 10px;
+    background: white;
+    position: absolute;
+    border-radius: 50%;
+    top: 5px;
+    left: 5px;
+}
+
+.pulse {
+    background: rgba(0,0,0,0.2);
+    border-radius: 50%;
+    height: 14px;
+    width: 14px;
+    position: absolute;
+    left: 13px;
+    top: 13px;
+    z-index: 1;
+    animation: pulsate 2s ease-out infinite;
+}
+
+@keyframes pulsate {
+    0% { transform: scale(1); opacity: 1; }
+    100% { transform: scale(3); opacity: 0; }
+}
+
+/* Información de Transporte */
+.transport-info {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    background: rgba(0,0,0,0.5);
+    padding: 1.5rem;
+    border-radius: 0 0 10px 10px;
+}
+
+.transport-option {
+    display: flex;
+    align-items: center;
+    margin: 0.5rem;
+}
+
+.transport-icon {
+    font-size: 1.5rem;
+    margin-right: 0.8rem;
+}
+
+/* Formulario de Contacto */
+.contact-form {
+    background: rgba(255,255,255,0.05);
+    padding: 2.5rem;
+    border-radius: 10px;
+    margin-top: 3rem;
+    border: 1px solid rgba(255,255,255,0.1);
+}
+
+.form-title {
+    font-size: 1.6rem;
+    margin-bottom: 0.5rem;
+    color: var(--color-primary);
+}
+
+.form-subtitle {
+    margin-bottom: 2rem;
+    opacity: 0.8;
+}
+
+.form-group {
+    margin-bottom: 1.5rem;
+    border-radius: 30px;
+    /* border: 1px solid rgb(77 77 77); */
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+}
+
+.form-group input, 
+.form-group select, 
+.form-group textarea {
+    width: 100%;
+    padding: 1rem;
+    background: rgba(255,255,255,0.1);
+    border: 1px solid rgba(255,255,255,0.2);
+    border-radius: 30px;
+    /* color: white; */
+    font-size: 1rem;
+}
+
+.form-group textarea {
+    min-height: 120px;
+    resize: vertical;
+}
+
+.btn-submit {
+    margin-top: 4rem;
+}
+
+.submit-btn {
+    background: var(--color-primary);
+    border: none;
+    padding: 1rem 2rem;
+    font-size: 1.1rem;
+    border-radius: 5px;
+    cursor: pointer;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.3);
+}
+
+
+@media screen and (max-width: 750px) {
+
+}
+
+.submit-btn-ghost {
+  background-color: transparent;
+      border-color: hsl(0deg 0% 0%);
+}
+.submit-btn-ghost:hover {
+  color: white;
+  background: hsl(rgba(15, 15, 15, 0.74), 70%, 53%);
+}
+.submit-btn-through {
+  transition: 0.6s cubic-bezier(0.77, 0, 0.175, 1);
+}
+.submit-btn-through::before {
+  position: absolute;
+  content: "";
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: hsl(var(--hue), 70%, 53%);
+  transform: scaleX(0);
+  transform-origin: right;
+  mix-blend-mode: color-dodge;
+  will-change: transform;
+  transition: transform 0.6s cubic-bezier(0.77, 0, 0.175, 1);
+}
+.submit-btn-through:hover {
+  color: white;
+  background: rgb(5, 5, 5);
+}
+.submit-btn-through:hover::before {
+  transform: scaleX(1);
+  transform-origin: left;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+    .contact-info {
+        grid-template-columns: 1fr;
+    }
+    
+    .transport-info {
+        flex-direction: column;
+    }
+    
+    .contact-form {
+        padding: 1.5rem;
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.hero-section2 {
+  position: relative;
+  height: 100vh;
+  background-color: #111;
+  overflow: hidden;
+}
+
+.hero-section2::before {
+  content: "";
+  position: absolute;
+  top: 0; left: 0;
+  width: 100%; height: 100%;
+  background-image: url('/img/brakes.jpeg');
+  background-size: cover;
+  background-position: center;
+  opacity: 0;
+  transition: opacity 0.5s ease-in-out;
+  z-index: 0;
+}
+
+.hero-section2.bg-hover::before {
+  opacity: 1;
+}
+
+.hover-trigger {
+  position: relative;
+  z-index: 1; 
+  color: white;
+  padding: 1rem;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.card-content::before {
+  content: '';
+  position: absolute;
+  inset: 0;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-image: var(--bg-img-url, none);
+  opacity: 0;
+  transition: opacity 0.5s ease-in-out;
+  z-index: -1;
+}
+
+.card-content.hovered::before {
+  opacity: 1;
 }
 
