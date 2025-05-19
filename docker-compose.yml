@@ -12,7 +12,9 @@ services:
       - "3306:3306"
 
   app:
-    build: .
+    build: 
+      context: .
+      dockerfile: Dockerfile.dev
     volumes:
       - .:/var/www/html
     depends_on:
