@@ -1,5 +1,4 @@
-# Ejemplo de .railwayignore
 Dockerfile
 docker-compose.yml
 .dockerignore
-/docker/
+docker/
