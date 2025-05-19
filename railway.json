@@ -1,0 +1,6 @@
+{
+  "build": {
+    "include": ["/app", "/bootstrap", "/config", "/database", "/public", "/resources", "/routes", "/vendor"],
+    "exclude": ["Dockerfile", "docker-compose.yml", "docker/"]
+  }
+}
