@@ -1,8 +1,8 @@
 {
   "build": {
     "builder": "nixpacks",
+    "postClone": "rm -f Dockerfile docker-compose.yml 2> /dev/null || true",
     "buildCommand": "echo 'Ignorando Dockerfile y usando Nixpacks para Laravel'",
-    "ignore": ["Dockerfile", "docker-compose.yml", "docker/"],
-    "postClone": "rm -f Dockerfile docker-compose.yml 2> /dev/null || true"
+    "ignore": ["Dockerfile", "docker-compose.yml", "docker/"]
   }
 }
