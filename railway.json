@@ -1,7 +1,7 @@
 {
   "build": {
-    "postClone": "rm -f Dockerfile docker-compose.yml && rm -rf docker/",
-    "include": ["/app", "/bootstrap", "/config", "/database", "/public", "/resources", "/routes", "/vendor"],
-    "exclude": ["Dockerfile", "docker-compose.yml", "docker/"]
+    "builder": "nixpacks",
+    "ignore": ["Dockerfile", "docker-compose.yml", "docker/"],
+    "postClone": "find . -name 'Dockerfile*' -delete && find . -name 'docker-compose*' -delete"
   }
 }
