@@ -1,0 +1,7 @@
+[build]
+builder = "nixpacks"
+ignore = ["Dockerfile", "docker-compose.yml", ".dockerignore", "docker/"]
+
+[build]
+builder = "nixpacks"
+ignore = ["Dockerfile", "docker-compose.yml", ".dockerignore", "docker/"]
